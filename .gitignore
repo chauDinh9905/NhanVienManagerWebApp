@@ -1,20 +1,59 @@
-# Visual Studio
-.vs/
-*.VC.db
-*.VC.opendb
-*.suo
-
-# Build
-Debug/
-Release/
+## ==== Build output (tự sinh lại khi build, không commit) ====
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
 x64/
 x86/
 
-# C/C++
-*.obj
-*.ipch
-*.pdb
-*.ilk
-*.idb
-*.tlog
+## ==== NuGet packages (tự tải lại bằng "Restore NuGet Packages", chiếm dung lượng lớn nhất) ====
+packages/
+*.nupkg
+# Nếu về sau chuyển sang PackageReference thì bỏ dòng packages/ ở trên và bật dòng dưới:
+# !packages/build/
+
+## ==== Visual Studio / user-specific, máy ai người đó tự sinh ====
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+## ==== ReSharper / các plugin phổ biến ====
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+## ==== Publish / deploy (chứa thông tin server, không nên public) ====
+*.pubxml
+*.pubxml.user
+*.publishproj
+PublishScripts/
+
+## ==== Test results ====
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+
+## ==== Log & temp ====
 *.log
+*.tmp
+*.cache
+*.bak
+
+## ==== File cấu hình chứa thông tin nhạy cảm (KHÔNG commit connection string/password thật) ====
+# Nếu về sau bạn thêm connectionStrings cố định vào Web.config, tách riêng ra file này rồi ignore:
+Web.config.local
+appsettings.local.json
+*.mysecrets
+
+## ==== Hệ điều hành ====
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+## ==== Resource generated code (tự sinh lại từ .resx, có thể để lại nếu muốn build ngay không cần Visual Studio,
+##      nhưng thường để .gitignore vì Visual Studio tự regenerate) ====
+*.Designer.cs.orig
