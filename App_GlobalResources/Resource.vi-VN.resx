@@ -154,7 +154,7 @@
     <value>Tạo bảng</value>
   </data>
   <data name="Btn_EditTable" xml:space="preserve">
-    <value> Sửa cấu trúc bảng</value>
+    <value>Sửa cấu trúc bảng</value>
   </data>
   <data name="Btn_ViewData" xml:space="preserve">
     <value>Xem dữ liệu</value>
