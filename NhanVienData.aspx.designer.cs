@@ -7,11 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace NhanVienWebApp
-{
-
-
-    public partial class NhanVienData
-    {
+namespace NhanVienWebApp {
+    
+    
+    public partial class NhanVienData {
     }
 }
